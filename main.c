@@ -6,7 +6,7 @@
 
 /********************************************************************************
 * main: Ansluter temperatursensor TMP36 till analog pin A2. Rumstemperaturen
-*       mäts och skrivs ut i ansluten seriell terminal var 10:e sekund.
+*       mäts och skrivs ut i ansluten seriell terminal var femte sekund.
 ********************************************************************************/
 int main(void)
 {
@@ -16,7 +16,7 @@ int main(void)
    while (1)
    {
       tmp36_print_temperature(&temp1);
-      delay_ms(10000);
+      delay_ms(5000);
    }
 
    return 0;
